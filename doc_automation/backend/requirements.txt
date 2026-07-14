@@ -1,0 +1,34 @@
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+python-multipart==0.0.9          # file upload support
+
+# ── PDF manipulation ───────────────────────────────────────────────────────────
+pymupdf==1.24.5                  # fitz – read/write PDF preserving layout
+pdfplumber==0.11.3               # extract text + coordinates from source PDFs
+pypdf==4.3.1                     # fallback PDF metadata reader
+
+# ── Office document parsing ────────────────────────────────────────────────────
+python-docx==1.1.2               # extract text from .docx files
+python-pptx==0.6.23              # extract text from .pptx files
+
+# ── AI extraction ─────────────────────────────────────────────────────────────
+google-generativeai==0.7.2       # Gemini API (primary)
+openai==1.35.3                   # OpenAI API (fallback)
+
+# ── Data & validation ─────────────────────────────────────────────────────────
+pydantic==2.7.4
+pydantic-settings==2.3.4
+python-dotenv==1.0.1
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+aiofiles==23.2.1                 # async file I/O
+Pillow==10.4.0                   # image processing
+httpx==0.27.0                    # async HTTP client
+tenacity==8.3.0                  # retry logic for AI calls
+colorlog==6.8.0                  # colored logging
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.2.2
+pytest-asyncio==0.23.7
+httpx==0.27.0                    # test client
